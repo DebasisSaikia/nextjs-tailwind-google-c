@@ -33,9 +33,9 @@ export default function Home() {
           <MicrophoneIcon className='w-5 h-5 mr-3 text-gray-500' />
         </div>
 
-        <div className=''>
-          <button className='butn hover:ring-1'>Google Search</button>
-          <button className='butn hover:ring-1'>I'm feeling lucky</button>
+        <div className='flex flex-col w-1/2 justify-center space-y-2 mt-8 sm:flex-row sm:space-y-0 sm:space-x-4'>
+          <button className='butn hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md'>Google Search</button>
+          <button className='butn hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md'>I'm feeling lucky</button>
         </div>
       </form>
       {/* footer elements */}
