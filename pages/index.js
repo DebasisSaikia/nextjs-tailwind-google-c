@@ -3,10 +3,11 @@ import Avatar from '../components/Avatar';
 // import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react'
 import { ViewGridIcon, MicrophoneIcon, SearchIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div >
+    <div className='flex flex-col justify-center h-screen items-center' >
       <Head>
         <title>Google</title>
       </Head>
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
       </header>
       {/* body element */}
-      <form action="#" className='flex flex-col items-center mt-44 flex-grow '>
+      <form action="#" className='flex flex-col items-center mt-44 flex-grow w-4/5'>
         <Image src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png' height={100} width={300} />
         <div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl'>
           <SearchIcon className='w-5 h-5 mr-3  text-gray-500' />
@@ -39,6 +40,7 @@ export default function Home() {
         </div>
       </form>
       {/* footer elements */}
+      <Footer />
     </div>
   )
 }
