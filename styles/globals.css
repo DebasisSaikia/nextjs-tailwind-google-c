@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
+  .butn {
+    @apply bg-gray-100 ring-gray-200 text-sm text-gray-800 p-3 rounded-md;
+  }
   .link {
     @apply cursor-pointer;
   }

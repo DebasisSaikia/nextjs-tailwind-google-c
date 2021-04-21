@@ -25,12 +25,17 @@ export default function Home() {
         </div>
       </header>
       {/* body element */}
-      <form action="#">
+      <form action="#" className='flex flex-col items-center mt-44 flex-grow '>
         <Image src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png' height={100} width={300} />
-        <div>
-          <SearchIcon className='w-5 h-5 mr-3 text-gray-500' />
-          <input type="text" className='focus:outline-none bg-red-500 ' />
+        <div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl'>
+          <SearchIcon className='w-5 h-5 mr-3  text-gray-500' />
+          <input type="text" className='flex-grow focus:outline-none ' />
           <MicrophoneIcon className='w-5 h-5 mr-3 text-gray-500' />
+        </div>
+
+        <div className=''>
+          <button className='butn hover:ring-1'>Google Search</button>
+          <button className='butn hover:ring-1'>I'm feeling lucky</button>
         </div>
       </form>
       {/* footer elements */}
